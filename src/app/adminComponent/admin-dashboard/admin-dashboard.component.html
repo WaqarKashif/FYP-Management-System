@@ -1,0 +1,46 @@
+<div>
+  <app-admin-navbar></app-admin-navbar>
+  <app-admin-sidebar></app-admin-sidebar>
+</div>
+<div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">Admin Dashboard</h1>
+      <p class="heading__credits">FYP Management System</p>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-users"></i></div>
+        <h2 class="card__title">No of Students: <b>{{totalStudents}}</b></h2>
+  
+        <p class="card__apply">
+          <a routerLink="/view-student">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-2">
+        <div class="card__icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h2 class="card__title">Teachers: <b>{{totalTeachers}}</b></h2>
+        <p class="card__apply">
+          <a routerLink="/view-teacher">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+     
+     <div class="card card-4">
+        <div class="card__icon"><i class="fas fa-marker"></i></div>
+        <h2 class="card__title">Evaluators: <b>{{totalEvaluators}}</b> </h2>
+        
+        <p class="card__apply">
+          <a routerLink="/view-evaluator">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-3">
+        <div class="card__icon"><i class="far fa-clipboard"></i></div>
+        <h2 class="card__title">Projects: <b>{{totalProjects}}</b></h2>
+        
+        <p class="card__apply">
+          <a class="card__link" href="dummypage.html">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      
+    </div>
+  </div>

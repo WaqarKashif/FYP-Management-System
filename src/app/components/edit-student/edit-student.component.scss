@@ -1,0 +1,73 @@
+.edit-student-details{
+    padding-left: 220px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    
+  
+  }
+  
+  .header_conent{
+    width: 100%;
+    justify-content: baseline;
+    padding-top: 50px;
+  
+  }mat-form-field{
+    width: 48%;
+  
+  }
+
+  .btn{
+      width: 35%;
+  }
+  .approve-btn{
+      width: 100%;
+  }
+  .map-card{
+    width: 100%;
+  }
+  .main-card{
+    width: 100%;
+  }
+  .img-card{
+    width: 100%;
+    
+  }
+
+ 
+  
+  
+  mat-icon{
+    color: black;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+  
+      
+    .student-details{
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+  
+    mat-form-field{
+       max-width: 45%;
+        
+    }
+    
+    .main-card{
+        max-width: 100%;
+    }
+    .img-card{
+        max-width:100%;
+        
+    }
+ 
+    
+
+    
+    .checkbox-container{
+        flex-wrap: wrap;
+    }
+  }
+  

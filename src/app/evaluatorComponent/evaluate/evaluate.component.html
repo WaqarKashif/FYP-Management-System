@@ -1,0 +1,167 @@
+<div>
+    <app-nav-bar-evaluator></app-nav-bar-evaluator>
+    <app-side-bar-evaluator></app-side-bar-evaluator>
+</div>
+
+<div class="main-content-container">
+
+  <div class="add-evaluator" fxLayout="column">
+    <form class="form"  (ngSubmit)="onSubmit(evaluate)"  #evaluate="ngForm"  >
+      <div
+      class="header_conent"
+      fxFlexAlign="stretch "
+      fxLayout="row"
+      fxFlexFill
+      fxLayoutAlign="space-between"
+    >
+      <div class="page_name" fxLayout="row" fxLayoutGap="15px">
+        <h1>Evaluation Form</h1>
+      </div>
+     
+    </div>
+    <hr>
+    
+  
+  
+    <div class="card-container" fxFlexFill fxLayoutGap="15px" fxLayout="row">
+      <mat-card class="main-card">
+          <div class="form-container" fxFlexAlign="stretch " fxLayoutGap="15px" >
+              <mat-card-subtitle>Main Info</mat-card-subtitle>
+             
+
+              <div fxLayoutGap="15px" fxFlexAlign="center center " fxLayout="row">
+
+                <h3> Project Title </h3>
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label>Project Title</mat-label>
+                  <input type="text"  name = 'evaluator_name' matInput placeholder=" Name" ngModel/>
+                </mat-form-field>
+
+              </div>
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Completion</b> (as committed in the porposal)
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label>completion</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  name = 'completion' matInput placeholder=" completion" ngModel/>
+                </mat-form-field>
+
+              </div>
+
+             
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Quality of Technical Work</b> (Design & Implementation)
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label>completion</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name = 'completion' matInput placeholder=" completion" ngModel/>
+                </mat-form-field>
+
+              </div>
+  
+
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Demonstration</b>
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label> Demonstration</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name = 'demonstration' matInput placeholder=" demonstration" ngModel/>
+                </mat-form-field>
+
+              </div>
+
+
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Quality of User Interface</b> (GUIs, Interaction flow, Aesthetics)
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label> User Interface</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name = 'user_interface' matInput  ngModel/>
+                </mat-form-field>
+
+              </div>
+
+
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Quality of Testing</b> (Tools, Methodologies, Metrics, etc.)
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label> Quality of Testing</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  name = 'testing' matInput  ngModel/>
+                </mat-form-field>
+
+              </div>
+
+
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Complexity & Scope</b> (Justified for a year's work)
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label> Complexity & Scope</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  name = 'complexity' matInput  ngModel/>
+                </mat-form-field>
+
+              </div>
+
+
+              <div fxLayoutGap="15px" fxFlexAlign="center  " fxLayout="row">
+
+                <b>Overall Evaluation</b>
+                <mat-form-field appearance="outline" class="title" >
+                  <mat-label> Overall Evaluation</mat-label>
+                  <input  type="number"
+                  min="0"
+                  oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"  name = 'overall' matInput  ngModel/>
+                </mat-form-field>
+
+              </div>
+<div>
+              <b>Comments</b>
+              <mat-form-field appearance="outline" class="title" >
+                <mat-label> Comment</mat-label>
+                <textarea type="text"  name = 'comments' matInput  ngModel>
+                </textarea>
+              </mat-form-field>
+
+            </div>
+  
+  
+
+                
+  
+                <div class="btn" >
+                  <button class="approve-btn" type="submit"  mat-raised-button color="primary">Evaluate</button>
+                </div>
+      
+  
+          </div>
+      </mat-card>
+    </div>
+  
+      </form>
+  </div>
+  
+  
+  
+
+</div>
+  

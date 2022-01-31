@@ -1,0 +1,31 @@
+<div>
+    <app-navbar></app-navbar>
+    <app-sidebar></app-sidebar>
+  </div>
+<div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">Student Dashboard</h1>
+      <p class="heading__credits">FYP Management System</p>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-users"></i></div>
+        <h2 class="card__title">Group Members: <b>{{groupmembers}}</b></h2>
+  
+        <p class="card__apply">
+          <a routerLink="/view-group">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-3">
+        <div class="card__icon"><i class="far fa-handshake"></i></div>
+        <h2 class="card__title">Meetings: <b>{{meetingCount}}</b></h2>
+        
+        <p class="card__apply">
+          <a routerLink="/view-group">More Info <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+     
+      
+    </div>
+  </div>

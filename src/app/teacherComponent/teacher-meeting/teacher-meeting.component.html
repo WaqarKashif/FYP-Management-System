@@ -1,0 +1,59 @@
+<div>
+    <app-nav-bar-teacher></app-nav-bar-teacher>
+    <app-side-bar-teacher></app-side-bar-teacher>
+  </div>
+  <div class="edit-teacher-details" fxLayout="column">
+    <form class="form" (ngSubmit)="onSubmit(meetingform)"  #meetingform="ngForm">
+      <div class="header_conent" fxFlexAlign="stretch " fxLayout="row" fxFlexFill fxLayoutAlign="space-between">
+        <div class="page_name" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="35px">
+          <a routerLink="/my-projects">
+            <mat-icon>keyboard_backspace</mat-icon>
+          </a>
+          <h1>Create Meeting</h1>
+        </div>
+  
+      </div>
+      <hr>
+  
+  
+  <br><br>
+      <div class="card-container" fxLayoutAlign="center center" fxLayoutGap="15px" >
+        <mat-card class="main-card" >
+          <div class="form-container" fxFlexAlign="stretch " fxLayoutAlign="center center"fxLayout="column" fxLayoutGap="15px">
+             <h3> Project Details</h3>
+  
+            <mat-form-field appearance="outline" class="title">
+              <mat-label>Meeting date</mat-label>
+              <input type="date" name='meeting_time' matInput  ngModel />
+            </mat-form-field>
+  
+  
+  
+            <mat-form-field appearance="outline" class="title">
+              <mat-label>Message</mat-label>
+              <textarea type="text" name='message' matInput  ngModel >
+              </textarea>
+            </mat-form-field>
+  
+           
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+            <div class="btn">
+              <button class="approve-btn" type="submit" mat-raised-button color="primary">Save</button>
+            </div>
+  
+  
+          </div>
+        </mat-card>
+      </div>
+  
+    </form>
+  </div>

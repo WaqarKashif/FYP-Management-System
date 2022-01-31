@@ -1,0 +1,10 @@
+[
+    {"name": "Rana Waqas", "email":"Rana@gmail.com", "interest":"Game Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Mazhar Jawaid", "email":"Mazhar@gmail.com", "interest":"Web Development", "availability":"Yes" ,"phone":"03004199017", "password":"12345678"},
+    {"name": "Ayesha Khan", "email":"Ayesha@gmail.com", "interest":"Machine Learning", "availability":"No","phone":"03234297388", "password":"12345678"},
+    {"name": "Aswad Sohail", "email":"Aswad@gmail.com", "interest":"Mobile Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Mubashir Ali", "email":"Mubashir@gmail.com", "interest":"Web Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Khawaja Tayyab", "email":"Sibte@gmail.com", "interest":"AI Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Ahmed Sohail", "email":"Ahmed@gmail.com", "interest":"Research Paper", "availability":"No","phone":"03024158766","password":"12345678"}
+
+]

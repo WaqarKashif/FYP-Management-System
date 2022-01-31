@@ -1,0 +1,77 @@
+<div>
+    <app-admin-navbar></app-admin-navbar>
+    <app-admin-sidebar></app-admin-sidebar>
+</div>
+<div class="add-evaluator" fxLayout="column">
+  <form class="form" (ngSubmit)="onSubmit(addevaluator)" #addevaluator="ngForm"  >
+    <div
+    class="header_conent"
+    fxFlexAlign="stretch "
+    fxLayout="row"
+    fxFlexFill
+    fxLayoutAlign="space-between"
+  >
+    <div class="page_name" fxLayout="row" fxLayoutGap="15px">
+      <h1>Add Evaluator</h1>
+    </div>
+   
+  </div>
+  <hr>
+  
+
+
+  <div class="card-container" fxFlexFill fxLayoutGap="15px" fxLayout="row">
+    <mat-card class="main-card">
+        <div class="form-container" fxFlexAlign="stretch " fxLayoutGap="15px" >
+            <mat-card-subtitle>Main Info</mat-card-subtitle>
+           
+            <mat-form-field appearance="outline" class="title" >
+              <mat-label>Name</mat-label>
+              <input type="text"  name = 'evaluator_name' matInput placeholder=" Name" ngModel/>
+            </mat-form-field>
+
+
+
+              <mat-form-field appearance="outline" class="title" >
+                <mat-label>Email</mat-label>
+                <input type="email"  name = 'email' matInput placeholder="Email"  ngModel/>
+              </mat-form-field>
+
+            
+
+              <mat-form-field class="title" appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input type="text" matInput name="phone" placeholder="330-4158-487" ngModel>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline" class="title" >
+                <mat-label>Address</mat-label>
+                <input type="text"  name = 'address' matInput placeholder=" Name" ngModel/>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="title" >
+                <mat-label>Password</mat-label>
+                <input type="password"  name = 'password' matInput placeholder="Enter Your Password" ngModel/>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline" class="title" >
+                <mat-label >Confirm Password</mat-label>
+                <input type="password"  name = 'confirm_password' matInput placeholder="Confirm Your Password" ngModel/>
+              </mat-form-field>
+              
+
+              <div class="btn" >
+                <button class="approve-btn" type="submit"  mat-raised-button color="primary">Sign Up</button>
+              </div>
+    
+
+        </div>
+    </mat-card>
+  </div>
+
+    </form>
+</div>
+
+

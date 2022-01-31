@@ -1,0 +1,10 @@
+[
+    {"name": "Waqar", "email":"stud.waqa@gmail.com","semester":"7th", "interest":"Game Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Shahzeen", "email":"Queen.Shahzeen@gmail.com","semester":"7th", "interest":"Web Development", "availability":"Yes" ,"phone":"03004199017", "password":"12345678"},
+    {"name": "Rumman", "email":"Rumman@gmail.com","semester":"8th", "interest":"Machine Learning", "availability":"No","phone":"03004199017", "password":"12345678"},
+    {"name": "Hunzila", "email":"Hunzila@gmail.com","semester":"7th", "interest":"Mobile Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Huzaifa", "email":"Huzaifa@gmail.com","semester":"8th", "interest":"Web Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Sibte", "email":"Sibte@gmail.com","semester":"7th", "interest":"AI Development", "availability":"Yes","phone":"03004199017", "password":"12345678"},
+    {"name": "Ahmed", "email":"Ahmed@gmail.com","semester":"8th", "interest":"Research Paper", "availability":"No","phone":"03004199017","password":"12345678"}
+
+]

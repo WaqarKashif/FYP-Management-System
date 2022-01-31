@@ -1,0 +1,19 @@
+<div class="sidebar" *ngIf="authService.isAuthenticatedUser" >
+    
+    <ul>
+        <li><a routerLink="/dashboard"> <img src="../../../assets/umt_logo.png" alt="AdminLTE Logo" class="brand-image"><span class="brand-text font-weight-light">UMT</span>  </a></li>
+        <hr>
+        <li><a routerLink="/admin-dashboard"><mat-icon class="icons">dashboard</mat-icon><span class="nav-text">Dashboard</span></a></li>
+        <li><a routerLink="/add-student"><mat-icon class="icons">chat_bubble_outline</mat-icon><span class="nav-text">Add Student</span></a></li>
+        <li><a routerLink="/view-student"><mat-icon class="icons">subject</mat-icon><span class="nav-text">View Students</span></a></li>
+        <li><a routerLink="/add-teacher"><mat-icon class="icons">bookmark_border</mat-icon><span class="nav-text">Add Teacher</span></a></li>
+        <li><a routerLink="/view-teacher"><mat-icon class="icons"> subject</mat-icon><span class="nav-text">View Teacher</span></a></li>
+        <li><a routerLink="/add-evaluator"><mat-icon class="icons">bookmark_border</mat-icon><span class="nav-text">Add Evaluator</span></a></li>
+        <li><a routerLink="/view-evaluator"><mat-icon class="icons"> subject</mat-icon><span class="nav-text">View Evaluator</span></a></li>
+        <li><a routerLink="/all-project"><mat-icon class="icons">chat_bubble_outline</mat-icon><span class="nav-text">All projects</span></a></li>
+        </ul>
+</div>
+
+
+
+    
